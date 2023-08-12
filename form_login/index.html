@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name = "viewport">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/Símbolo 001.png" type="image/x-icon">
+    <title>Filigranas-Login</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/normalize.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/formulario.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header__container">
+        <div class="header__items">
+            <a class = "header__logo" href = "#">
+                <img class="header__logo-image" alt = "logo" src="./assets/Logo.svg">
+            </a>
+            <div class="header__search" id="search__container">
+                <input class = "header__search-input" id = "search__items" placeholder="¿Qué quieres buscar?" type = "text">
+
+                <button class="header__search-button" id="search__action"><img  class="header__search-icon" alt="botonbuscar" src="./assets/Icone.svg"></button>
+            </div>
+        </div>
+        <div><img class="lupa" alt="lupa" src="./assets/Icone.svg"></div>
+    </header>
+
+    <main>
+        <section class="formulario__log">
+            <div class="formulario__log__container">
+                <form class="formulario__login">
+                    <h2 class="formulario__login_titulo">Iniciar Sesión</h2>
+
+
+                    <label class="formulario__login_correo"><input class="formulario__login__correoInput" id="login__correo" name="correo" placeholder="Escribe aquí tu correo" placelabel="Correo" required type="email">
+                    </label>
+
+                    <label class="formulario__login__contrasena"><input class="formulario__login__contrasenaInput" id="login__contrasena" placeholder="Escribe aquí tu contraseña" required type="password"></input>
+                    </label>
+
+                    <input class="formulario__login__boton" id ="formulario__login__boton"  type="submit" value="Login">
+                </form>
+            </div>
+        </section>
+
+        <section class="formulario">
+            <div class="formulario__container">
+        
+                <img class="formulario__logo" src="./assets/Logo.svg" alt="logo">
+                <ul class="formulario__menu">
+                    <li>Quiénes somos</li>
+                    <li>Política de privacidad</li>
+                    <li>Programa de fidelidad</li>
+                    <li>Nuestras tiendas</li>
+                    <li>Quiero ser franquiciado</li>
+                    <li>Anúnciate aquí</li>
+                </ul>
+    
+
+                <form class="formulario__contacto">
+                    <h2 class="formulario__contacto_titulo">Hable con nosotros</h2>
+
+                    <label class="formulario__contacto_nombre">Nombre<input class="formulario__contacto_nombreInput" id="contact__nombre" name="nombre" placeholder="Escribe aquí tu nombre" placelabel="Nombre" required type="text">
+                    </label>
+        
+                    <label class="formulario__contacto_areamensaje"><textarea class="formulario__contacto__mensaje-text" id="contact__mensaje" placeholder="Escribe aquí tu mensaje" required cols="60" rows="4"></textarea>
+                    </label>
+        
+                    <input class="contacto__boton" id ="contacto__boton" type="submit" value="Enviar mensaje">
+
+                </form>
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer>
+                <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
+                <h2 class="footer__fecha">2023</h2>
+            </footer>
+
+        </section>
+
+    </main>
+</body>

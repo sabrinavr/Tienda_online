@@ -1,0 +1,41 @@
+.formulario__log__container{
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--blancofloral);
+}
+.formulario__login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+
+}
+
+.formulario__login_titulo{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.formulario__login__correoInput,.formulario__login__contrasenaInput{
+    width:100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px;
+    border-bottom: 1px solid var(--verde-oscuro);
+}
+
+.formulario__login__boton{
+    padding: 10px 25px 16px 25px;
+    border-radius: 1.5em;
+    width: fit-content;
+    color: var(--morado);
+    background-color: var(--verde4);
+    border: 2px solid var(--morado);
+}
+
+.formulario__login__boton:hover{
+    cursor: pointer;
+}

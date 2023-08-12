@@ -1,0 +1,55 @@
+.banner__contenedor{
+    background-image: url("../bannercanva.png");
+    background-size: cover; /* Escala la imagen para cubrir todo el espacio */
+    background-position: center; /* Centra la imagen en el banner */
+    background-repeat: no-repeat;
+    color: var(--verde-oscuro); /* Cambia el color del texto para que sea legible */
+    text-align: left; 
+    padding: 250px 0 50px 100px; /* Espaciado para el contenido */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.banner__info{
+    width: 50%;
+}
+
+.banner__info-title{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.banner__info-description{
+    font-size: 22px;
+    font-weight: 700;
+    padding: 16px 0 16px 0;
+}
+
+.banner__button{
+    padding: 16px;
+    color: var(--morado);
+    background-color: var(--verde4);
+    font-weight: 700;
+    border-radius: 1.5em;
+}
+
+.banner__button:hover{
+    cursor: pointer;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos para tabletas */
+    .banner__contenedor{
+        padding-bottom: 20px;
+    }
+
+  }
+
+  @media (max-width: 768px){
+    .banner__info-title{
+        font-size: 22px;
+    }
+    .banner__info-description{
+        font-size: 14px;
+        font-weight: 600;
+    }
+  }
