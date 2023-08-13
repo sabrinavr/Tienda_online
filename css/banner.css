@@ -1,5 +1,5 @@
 .banner__contenedor{
-    background-image: url("../bannercanva.png");
+    background-image: url("../assets/bannercanva.png");
     background-size: cover; /* Escala la imagen para cubrir todo el espacio */
     background-position: center; /* Centra la imagen en el banner */
     background-repeat: no-repeat;
