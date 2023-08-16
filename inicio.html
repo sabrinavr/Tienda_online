@@ -58,7 +58,7 @@
             <p class="banner__info-description">
               Productos seleccionados con 33% de descuento
             </p>
-            <a href="#" rel="">
+            <a href="#Aceites">
               <button class="banner__button">Ver Rebajas</button>
             </a>
           </div>
@@ -124,7 +124,7 @@
 
         <div class="product__container">
           <div class="product__header">
-            <h2 class="product__title">Aceites vírgenes</h2>
+            <h2 class="product__title" id="Aceites">Aceites vírgenes</h2>
             <a class="product__mostrar" href="./productos/index.html">Ver todos<img
                 class="flecha"
                 alt="vertodos"
@@ -266,25 +266,25 @@
           <form class="formulario__contacto" id="form__data">
             <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
 
-            <label class="formulario__contacto_nombre" for="name"><input
+            <div class="formulario__contacto_nombre" formulario__contacto_nombre-invalid><input
                 class="formulario__contacto_nombreInput"
                 id="contact__nombre"
                 name="nombre"
                 placeholder="Escribe aquí tu nombre"
                 placelabel="Nombre"
                 required
-                type="text"/>
-            </label>
+                type="text" maxlength="40"/>
+            </div>
 
-            <label class="formulario__contacto_areamensaje">
+            <div class="formulario__contacto_areamensaje">
               <textarea
                 class="formulario__contacto__mensaje-text"
                 id="contact__mensaje"
                 placeholder="Escribe aquí tu mensaje"
                 required
                 cols="60"
-                rows="4"></textarea>
-            </label>
+                rows="4" maxlength="120"></textarea>
+            </div>
 
             <input
               class="contacto__boton"
@@ -292,6 +292,7 @@
               type="submit"
               value="Enviar mensaje"/>
           </form>
+
         </div>
       </section>
 
@@ -304,5 +305,6 @@
         </div>
       </footer>
     </main>
+
   </body>
 </html>
