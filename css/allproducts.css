@@ -20,6 +20,7 @@ section.allproducts{
 .allproducts__title{
     font-size: 32px;
     font-weight: 700;
+    color: var(--verde-oscuro);
 }
 
 .allproducts__add__boton {
@@ -29,6 +30,7 @@ section.allproducts{
     color: var(--morado);
     background-color: var(--verde4);
     border: 2px solid var(--morado);
+    margin-right: 3em;
 }
 
 .allproducts__add__boton:hover{
@@ -45,7 +47,8 @@ section.allproducts{
 .product__list img{
     padding-bottom: 8px;
     width: 9em;
-    
+    border-radius: .5em;
+    height: 12em
 }
 
 .product__list h2{
@@ -78,10 +81,10 @@ section.allproducts{
         font-size: 22px;
     }
     
-    }
+}
 
 
-  @media (max-width: 768px){
+@media (max-width: 768px){
     .allproducts__container{
         
         width: 90%;
@@ -102,4 +105,4 @@ section.allproducts{
     }
 
 
-  }
+}

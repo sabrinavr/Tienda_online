@@ -9,8 +9,6 @@
     padding: 40px;
     gap: 20px;
     margin-left: 15%
-    
-    
 }
 
 .formulario__addproduct__titulo{
@@ -27,6 +25,11 @@
     padding: 15px;
     border-bottom: 1px solid var(--verde-oscuro);
     width: 70%;
+}
+
+.form-selection{
+    width: 75%
+
 }
 
 .formulario__addproduct__boton{
@@ -55,6 +58,10 @@
     .formulario__addproduct__boton{
         width: 95%;
     }
+
+    .form-selection{
+    width: 95%
+    }
 }
 
 @media (max-width: 768px){
@@ -67,6 +74,11 @@
 
     .formulario__addproduct__boton{
         width: 95%;
+    }
+
+    .form-selection{
+        width: 100%
+    
     }
 
 }

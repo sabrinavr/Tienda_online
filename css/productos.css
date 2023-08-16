@@ -5,7 +5,7 @@ section.productos{
 }
 
 .product__header{
-    padding: 64px 0 16px 0;
+    padding: 50px 0 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,16 +36,17 @@ section.productos{
 .product__list{
     display: flex;
     gap: 16px;
-    /*width: calc(13.3% - 8px)*/
+    
 }
 
 
 .product__list img{
     padding-bottom: 8px;
     width: 176px;
-    height: 220px;
-    /*  max-width: 100%;
-  height: auto;*/
+    height: 12em;
+    width: 9em;
+    border-radius: .5em;
+   
 
 }
 

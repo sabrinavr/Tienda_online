@@ -38,4 +38,9 @@
 
 .formulario__login__boton:hover{
     cursor: pointer;
+    color: var(--verde-oscuro);
+}
+
+.mensaje_error{
+    display: none;
 }

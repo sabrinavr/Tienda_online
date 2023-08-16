@@ -17,14 +17,29 @@ section.formulario{
 .formulario__logo{
     width: 176px;
 }
+.formulario__logo:hover{
+    cursor: pointer;
+}
 
-.formulario__menu{
+.contacto__info{
+    display: flex;
+    gap: 48px;
+    font-weight: 500;
+    font-size:16px;  
+}
+
+.contacto__info ul{
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    font-weight: 500;
-    font-size: 16px;
+    gap: 25px;
 }
+
+.contacto__info-text{
+    color: var(--verde-oscuro);
+    text-decoration: none;
+    
+}
+
 
 .formulario__contacto{
     display: flex;
@@ -36,6 +51,7 @@ section.formulario{
 .formulario__contacto_titulo{
     font-size: 16px;
     font-weight: 700;
+
 }
 
 .formulario__contacto_nombre{
@@ -69,6 +85,13 @@ section.formulario{
     border: 2px solid var(--morado);
 }
 
+.contacto__boton:hover{
+    cursor: pointer;
+    color: var(--verde-oscuro);
+}
+
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     /* Estilos para tabletas */
     section.formulario{
@@ -83,6 +106,7 @@ section.formulario{
 
     .formulario__contacto{
         width: 66%;
+        padding-top: 2em;
     }
 
   }
@@ -106,6 +130,7 @@ section.formulario{
     }
     .formulario__contacto{
         width: 100%;
+        padding-top: 2em;
     }
         
 

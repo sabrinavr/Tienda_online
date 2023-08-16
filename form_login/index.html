@@ -23,7 +23,7 @@
 <body>
     <header class="header__container">
         <div class="header__items">
-            <a class = "header__logo" href = "#">
+            <a class = "header__logo" href = "../inicio.html">
                 <img class="header__logo-image" alt = "logo" src="../assets/Logo.svg">
             </a>
             <div class="header__search" id="search__container">
@@ -38,57 +38,108 @@
     <main>
         <section class="formulario__log">
             <div class="formulario__log__container">
-                <form class="formulario__login">
+                <form class="formulario__login" data-form id="formulario__login">
                     <h2 class="formulario__login_titulo">Iniciar Sesión</h2>
 
 
-                    <label class="formulario__login_correo"><input class="formulario__login__correoInput" id="login__correo" name="correo" placeholder="Escribe aquí tu correo" placelabel="Correo" required type="email">
+                    <label for="login__correo" class="formulario__login_correo">
+                        <input class="formulario__login__correoInput" 
+                        data-email 
+                        id="login__correo" 
+                        name="correo" 
+                        placeholder="Escribe aquí tu correo" 
+                        required 
+                        type="email">
                     </label>
 
-                    <label class="formulario__login__contrasena"><input class="formulario__login__contrasenaInput" id="login__contrasena" placeholder="Escribe aquí tu contraseña" required type="password"></input>
+                    <label for="login__contrasena" class="formulario__login__contrasena"> 
+                        <input class="formulario__login__contrasenaInput" data-password 
+                        id="login__contrasena" 
+                        name="contrasena"  
+                        placeholder="Escribe aquí tu contraseña" 
+                        required 
+                        type="password"></input>
                     </label>
 
                     <input class="formulario__login__boton" id ="formulario__login__boton"  type="submit" value="Login">
+                    <p class="mensaje_error">Usuario no registrado</p>
                 </form>
             </div>
         </section>
 
         <section class="formulario">
             <div class="formulario__container">
-        
-                <img class="formulario__logo" src="../assets/Logo.svg" alt="logo">
-                <ul class="formulario__menu">
-                    <li>Quiénes somos</li>
-                    <li>Política de privacidad</li>
-                    <li>Programa de fidelidad</li>
-                    <li>Nuestras tiendas</li>
-                    <li>Quiero ser franquiciado</li>
-                    <li>Anúnciate aquí</li>
-                </ul>
+              <a href="../inicio.html">
+                <img class="formulario__logo" src="../assets/Logo.svg" alt="logo" />
+              </a>
     
-
-                <form class="formulario__contacto">
-                    <h2 class="formulario__contacto_titulo">Hable con nosotros</h2>
-
-                    <label class="formulario__contacto_nombre">Nombre<input class="formulario__contacto_nombreInput" id="contact__nombre" name="nombre" placeholder="Escribe aquí tu nombre" placelabel="Nombre" required type="text">
-                    </label>
-        
-                    <label class="formulario__contacto_areamensaje"><textarea class="formulario__contacto__mensaje-text" id="contact__mensaje" placeholder="Escribe aquí tu mensaje" required cols="60" rows="4"></textarea>
-                    </label>
-        
-                    <input class="contacto__boton" id ="contacto__boton" type="submit" value="Enviar mensaje">
-
-                </form>
+              <div class="contacto__info"> 
+                <ul>
+                  <li class="contacto__info-li">
+                    <a class="contacto__info-text" href="#">Quiénes somos</a>
+                  </li>
+                  <li class="contacto__info-li">
+                    <a class="contacto__info-text" href="#">Política de privacidad</a>
+                  </li>
+                  <li class="contacto__info-li">
+                    <a class="contacto__info-text" href="#">Programa de fidelidad</a>
+                  </li>
+                  <li class="contacto__info-li">
+                    <a class="contacto__info-text" href="#">Nuestras Tiendas</a>
+                  </li>
+                  <li class="contacto__info-li">
+                    <a class="contacto__info-text" href="#">Quiero ser franquiciado</a>
+                  </li>
+                  <li class="contacto__info-li">
+                    <a class="contacto__info-text" href="#">Anúnciate aquí</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <form class="formulario__contacto" id="form__data">
+                <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
+    
+                <label class="formulario__contacto_nombre" for="name"><input
+                    class="formulario__contacto_nombreInput"
+                    id="contact__nombre"
+                    name="nombre"
+                    placeholder="Escribe aquí tu nombre"
+                    placelabel="Nombre"
+                    required
+                    type="text"/>
+                </label>
+    
+                <label class="formulario__contacto_areamensaje">
+                  <textarea
+                    class="formulario__contacto__mensaje-text"
+                    id="contact__mensaje"
+                    placeholder="Escribe aquí tu mensaje"
+                    required
+                    cols="60"
+                    rows="4"></textarea>
+                </label>
+    
+                <input
+                  class="contacto__boton"
+                  id="contacto__boton"
+                  type="submit"
+                  value="Enviar mensaje"/>
+              </form>
             </div>
-        </section>
-
-        <section class="footer">
-            <footer>
-                <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
-                <h2 class="footer__fecha">2023</h2>
-            </footer>
+          </section>
+    
+          <footer class="footer">
+            <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
+            <h2 class="footer__fecha">2023</h2>
+            <div class="footer__redes">
+              <a href="https://github.com/sabrinavr"><img src="../assets/github.svg " alt="git"/></a>
+              <a href="https://www.linkedin.com/in/sabrina-van-remoortere-2b18b62b/"><img src="../assets/linkedin.svg" alt="linkedin"/></a>
+            </div>
+          </footer>
 
         </section>
 
     </main>
+    <script src="admin_login.js"></script>
 </body>
+</html>
