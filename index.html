@@ -237,7 +237,7 @@
       <section class="formulario">
         <div class="formulario__container">
           <a href="../inicio.html">
-            <img class="formulario__logo" src="../assets/Logo.svg" alt="logo">
+            <img class="formulario__logo" src="./assets/Logo.svg" alt="logo">
           </a>
 
           <div class="contacto__info"> 
@@ -266,7 +266,7 @@
           <form class="formulario__contacto" id="form__data">
             <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
 
-            <div class="formulario__contacto_nombre" formulario__contacto_nombre-invalid><input
+            <label for="contact__nombre"><input
                 class="formulario__contacto_nombreInput"
                 id="contact__nombre"
                 name="nombre"
@@ -274,9 +274,9 @@
                 placelabel="Nombre"
                 required
                 type="text" maxlength="40"/>
-            </div>
+            </label>
 
-            <div class="formulario__contacto_areamensaje">
+            <label for="contact__mensaje">
               <textarea
                 class="formulario__contacto__mensaje-text"
                 id="contact__mensaje"
@@ -284,10 +284,9 @@
                 required
                 cols="60"
                 rows="4" maxlength="120"></textarea>
-            </div>
+            </label>
 
-            <input
-              class="contacto__boton"
+            <input class="contacto__boton"
               id="contacto__boton"
               type="submit"
               value="Enviar mensaje"/>
@@ -300,8 +299,8 @@
         <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
         <h2 class="footer__fecha">2023</h2>
         <div class="footer__redes">
-          <a href="https://github.com/sabrinavr"><img src="../assets/github.svg " alt="git"/></a>
-          <a href="https://www.linkedin.com/in/sabrina-van-remoortere-2b18b62b/"><img src="../assets/linkedin.svg" alt="linkedin"/></a>
+          <a href="https://github.com/sabrinavr"><img src="./assets/github.svg" alt="git"/></a>
+          <a href="https://www.linkedin.com/in/sabrina-van-remoortere-2b18b62b/"><img src="./assets/linkedin.svg" alt="linkedin"/></a>
         </div>
       </footer>
     </main>
