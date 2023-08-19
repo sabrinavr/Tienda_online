@@ -46,7 +46,9 @@
         <section class="form__addproduct">
             <div class="form__addproduct__container">
                 <h2 class="formulario__addproduct__titulo">Agregar nuevo producto</h2>
+
                 <form class="formulario__addproduct">
+
                     <label class="formulario__addproduct__url"><input class="formulario__addproduct__urlInput" id="addproduct__url" name="url" placeholder="URL de la imagen" data-url required type="file">
                     </label>
 
@@ -57,13 +59,13 @@
                         <option data-diversos value = "CuidadoPersonal">Cuidado Personal</option>
                     </select>
 
-                    <label class="formulario__addproduct__nombre"><input class="formulario__addproduct__nombreInput" id="addproduct__nombre" name="nombre" placeholder="Nombre del producto" data-nombre required type="text">
+                    <label class="formulario__addproduct__nombre"><input class="formulario__addproduct__nombreInput" id="addproduct__nombre" name="nombre" placeholder="Nombre del producto" data-nombre required type="text" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" maxlength="30">
                     </label>
 
                     <label class="formulario__addproduct__precio"><input class="formulario__addproduct__precioInput" id="addproduct__precio" name="precio" placeholder="Precio del producto" data-precio required type="number">
                     </label>
 
-                    <label class="formulario__addproduct__descripcion"><textarea class="formulario__addproduct__descripcionInput" id="addproduct__descripcion" name="descripcion" placeholder="Descripción del producto" data-descripcion required type="text"></textarea>
+                    <label class="formulario__addproduct__descripcion"><textarea class="formulario__addproduct__descripcionInput" id="addproduct__descripcion" name="descripcion" placeholder="Descripción del producto" data-descripcion required type="text" pattern="^.{1,255}$" ></textarea>
                     </label>
 
                     <a class="formulario__addproduct__btn" href="#">

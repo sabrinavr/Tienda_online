@@ -263,35 +263,52 @@
             </ul>
           </div>
 
-          <form class="formulario__contacto" id="form__data">
+          <form action="" class="formulario__contacto" id="formulario__contacto">
             <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
 
-            <label for="contact__nombre"><input
+            <div class="form__contacto__nombre-container">
+              <label for="contact__nombre"></label>
+                <input
                 class="formulario__contacto_nombreInput"
                 id="contact__nombre"
-                name="nombre"
+                name="contact__nombre"
                 placeholder="Escribe aquí tu nombre"
-                placelabel="Nombre"
+                data-tipo="nombre"
+                title="Nombre solamente acepta letras y espacios en blanco"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
                 required
                 type="text" maxlength="40"/>
-            </label>
 
-            <label for="contact__mensaje">
-              <textarea
+                <p class="formulario__contacto__error-nombre none"></p>
+              
+            </div>
+
+            <div class="form__contacto__textarea-container">
+              <label for="contact__mensaje"></label>
+                <textarea
                 class="formulario__contacto__mensaje-text"
                 id="contact__mensaje"
+                name="contact__mensaje"
                 placeholder="Escribe aquí tu mensaje"
+                title="Por favor escribe un mensaje de máximo 120 caracteres para que sepamos cómo ayudarte"
                 required
+                data-pattern="^[\s\S]{1,250}$"
                 cols="60"
-                rows="4" maxlength="120"></textarea>
-            </label>
+                rows="4" maxlength="120" ></textarea>
+
+                <p class="formulario__contacto__error-mensaje none"></p>
+              
+            </div>
 
             <input class="contacto__boton"
               id="contacto__boton"
               type="submit"
               value="Enviar mensaje"/>
-          </form>
 
+            <div id="formulario__contacto__respuesta none">
+              <p id="completado"></p>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -304,6 +321,8 @@
         </div>
       </footer>
     </main>
+
+    <script src="./js/valida_contacto.js"></script>
 
   </body>
 </html>

@@ -46,6 +46,8 @@ section.formulario{
     flex-direction: column;
     gap: 8px;
     width: 40%;
+    --form-ok-color: var(--verde3)
+    --form-error-color: #ff0000; 
 }
 
 .formulario__contacto_titulo{
@@ -66,9 +68,13 @@ section.formulario{
     border: none;
     font-size: 16px;
     font-weight: 400;
-    padding: 0;
-    
+    padding: .5em;
 }
+
+/*.formulario__contacto_nombreInput:invalid{
+    color: red;
+    font-weight: 700;
+}*/
 
 .formulario__contacto__mensaje-text{
     border: none;
@@ -81,6 +87,7 @@ section.formulario{
     border-radius: 1.5em;
     width: fit-content;
     color: var(--morado);
+    font-weight: 500;
     background-color: var(--verde4);
     border: 2px solid var(--morado);
 }
@@ -88,6 +95,52 @@ section.formulario{
 .contacto__boton:hover{
     cursor: pointer;
     color: var(--verde-oscuro);
+}
+
+.formulario__contacto__loader{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario__contacto__respuesta{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: var(--morado)
+
+}
+
+.formulario__contacto [required]:valid{
+    border: 2px solid var(--verde2);
+}
+
+.formulario__contacto [required]:invalid{
+    border: 1px solid #ff0000;
+}
+
+.formulario__contacto__error-mensaje,.formulario__contacto__error-nombre{
+    margin-top: -0.20rem;
+    font-size: 80%;
+    background-color: #ff0000;
+    color: white;
+    transition: all 800ms ease;
+    padding: 5px;
+}
+
+/*.formulario__contacto__error.is-active{
+    display: block;
+    animation: show-message 1s 1 normal 0s ease-out both;
+}*/
+
+.none{
+    display: none;
+}
+
+@keyframes show-message{
+    0%{
+        visibility: hidden;
+        opacity: 1;
+    }
 }
 
 
