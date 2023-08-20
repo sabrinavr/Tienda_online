@@ -1,153 +1,261 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name = "viewport">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="icon" href="../assets/Símbolo 001.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/Símbolo 001.png" type="image/x-icon" />
 
     <title>Filigranas-Agregar productos</title>
-    <link href="../css/style.css" rel="stylesheet">
-    <link href="../css/normalize.css" rel="stylesheet">
-    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet" />
 
-    <link href="../css/header_addproduct.css" rel="stylesheet">
-    <link href="../css/formulario.css" rel="stylesheet">
-    <link href="../css/footer.css" rel="stylesheet">
-    <link href="../css/add_product.css" rel="stylesheet">
+    <link href="../css/header_addproduct.css" rel="stylesheet" />
+    <link href="../css/formulario.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+    <link href="../css/add_product.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header class="header__container">
-        <div class="header__items">
-            <a class = "header__logo" href = "#">
-                <img class="header__logo-image" alt = "logo" src="../assets/Logo.svg">
-            </a>
-            <div class="header__search" id="search__container">
-                <input class = "header__search-input" id = "search__items" placeholder="¿Qué quieres buscar?" type = "text">
+      <div class="header__items">
+        <a class="header__logo" href="#">
+          <img class="header__logo-image" alt="logo" src="../assets/Logo.svg" />
+        </a>
+        <div class="header__search" id="search__container">
+          <input
+            class="header__search-input"
+            id="search__items"
+            placeholder="¿Qué quieres buscar?"
+            type="text"
+          />
 
-                <button class="header__search-button" id="search__action"><img  class="header__search-icon" alt="botonbuscar" src="../assets/Icone.svg"></button>
-            </div>
+          <button class="header__search-button" id="search__action">
+            <img
+              class="header__search-icon"
+              alt="botonbuscar"
+              src="../assets/Icone.svg"
+            />
+          </button>
         </div>
-        <div class="header__caja__admin__lupa">
-            <a class="header__admin" href="../form_login/index.html">
-                <button class="header__admin-boton">Menú Administrador</button>
-            </a>
-            <img  class="header__lupa" alt="buscar" src="../assets/Icone.svg">
-        </div>
-        
+      </div>
+      <div class="header__caja__admin__lupa">
+        <a class="header__admin" href="../form_login/index.html">
+          <button class="header__admin-boton">Menú Administrador</button>
+        </a>
+        <img class="header__lupa" alt="buscar" src="../assets/Icone.svg" />
+      </div>
     </header>
 
     <main>
-        <section class="form__addproduct">
-            <div class="form__addproduct__container">
-                <h2 class="formulario__addproduct__titulo">Agregar nuevo producto</h2>
+      <section class="form__addproduct">
+        <div class="form__addproduct__container">
+          <h2 class="formulario__addproduct__titulo">Agregar nuevo producto</h2>
 
-                <form class="formulario__addproduct">
+          <form class="formulario__addproduct">
+            <label class="formulario__addproduct__url"
+              ><input
+                class="formulario__addproduct__urlInput"
+                id="addproduct__url"
+                name="url"
+                placeholder="URL de la imagen"
+                data-url
+                required
+                type="file"
+              />
+              <img id="imagen-previa" src="#" alt="Vista previa de la imagen" style="display: none;">
+            </label>
 
-                    <label class="formulario__addproduct__url"><input class="formulario__addproduct__urlInput" id="addproduct__url" name="url" placeholder="URL de la imagen" data-url required type="file">
-                    </label>
+            <select class="form-selection" data-categoria multiple required>
+              <option disabled selected value="">Selecciona categoría</option>
+              <option data-ProductosZeroWaste value="Productos Zero Waste">
+                Productos Zero Waste
+              </option>
+              <option data-AceitesVirgenes value="Aceites vírgenes">
+                Aceites vírgenes
+              </option>
+              <option data-diversos value="CuidadoPersonal">
+                Cuidado Personal
+              </option>
+            </select>
 
-                    <select class="form-selection" data-categoria multiple required>
-                        <option disabled selected value = ""> Selecciona categoría</option>
-                        <option data-ProductosZeroWaste value = "Productos Zero Waste">Productos Zero Waste</option>
-                        <option data-AceitesVirgenes value = "Aceites vírgenes">Aceites vírgenes </option>
-                        <option data-diversos value = "CuidadoPersonal">Cuidado Personal</option>
-                    </select>
+            <label class="formulario__addproduct__nombre"
+              ><input
+                class="formulario__addproduct__nombreInput"
+                id="addproduct__nombre"
+                name="nombre"
+                placeholder="Nombre del producto"
+                data-nombre
+                required
+                type="text"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                maxlength="30"
+              />
+            </label>
 
-                    <label class="formulario__addproduct__nombre"><input class="formulario__addproduct__nombreInput" id="addproduct__nombre" name="nombre" placeholder="Nombre del producto" data-nombre required type="text" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" maxlength="30">
-                    </label>
+            <label class="formulario__addproduct__precio"
+              ><input
+                class="formulario__addproduct__precioInput"
+                id="addproduct__precio"
+                name="precio"
+                placeholder="Precio del producto"
+                data-precio
+                required
+                type="number"
+              />
+            </label>
 
-                    <label class="formulario__addproduct__precio"><input class="formulario__addproduct__precioInput" id="addproduct__precio" name="precio" placeholder="Precio del producto" data-precio required type="number">
-                    </label>
+            <label class="formulario__addproduct__descripcion">
+              <textarea
+                class="formulario__addproduct__descripcionInput"
+                id="addproduct__descripcion"
+                name="descripcion"
+                placeholder="Descripción del producto"
+                data-descripcion
+                required
+                type="text"
+                maxlength="150"
+              ></textarea>
+            </label>
 
-                    <label class="formulario__addproduct__descripcion"><textarea class="formulario__addproduct__descripcionInput" id="addproduct__descripcion" name="descripcion" placeholder="Descripción del producto" data-descripcion required type="text" pattern="^.{1,255}$" ></textarea>
-                    </label>
-
-                    <a class="formulario__addproduct__btn" href="#">
-                        <button class="formulario__addproduct__boton" id ="formulario__addproduct__boton"  data-formBtn type="submit" value="Add product">Agregar producto</button>
-                    </a>
-                </form>
-            </div>
-        </section>
-
-        <section class="formulario">
-          <div class="formulario__container">
-            <a href="../inicio.html">
-              <img class="formulario__logo" src="../assets/Logo.svg" alt="logo" />
-            </a>
-  
-            <div class="contacto__info"> 
-              <ul>
-                <li class="contacto__info-li">
-                  <a class="contacto__info-text" href="#">Quiénes somos</a>
-                </li>
-                <li class="contacto__info-li">
-                  <a class="contacto__info-text" href="#">Política de privacidad</a>
-                </li>
-                <li class="contacto__info-li">
-                  <a class="contacto__info-text" href="#">Programa de fidelidad</a>
-                </li>
-                <li class="contacto__info-li">
-                  <a class="contacto__info-text" href="#">Nuestras Tiendas</a>
-                </li>
-                <li class="contacto__info-li">
-                  <a class="contacto__info-text" href="#">Quiero ser franquiciado</a>
-                </li>
-                <li class="contacto__info-li">
-                  <a class="contacto__info-text" href="#">Anúnciate aquí</a>
-                </li>
-              </ul>
-            </div>
-  
-            <form class="formulario__contacto" id="form__data">
-              <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
-  
-              <label class="formulario__contacto_nombre" for="name"><input
-                  class="formulario__contacto_nombreInput"
-                  id="contact__nombre"
-                  name="nombre"
-                  placeholder="Escribe aquí tu nombre"
-                  placelabel="Nombre"
-                  required
-                  type="text"/>
-              </label>
-  
-              <label class="formulario__contacto_areamensaje">
-                <textarea
-                  class="formulario__contacto__mensaje-text"
-                  id="contact__mensaje"
-                  placeholder="Escribe aquí tu mensaje"
-                  required
-                  cols="60"
-                  rows="4"></textarea>
-              </label>
-  
-              <input
-                class="contacto__boton"
-                id="contacto__boton"
+            <a class="formulario__addproduct__btn" href="#">
+              <button
+                class="formulario__addproduct__boton"
+                id="formulario__addproduct__boton"
+                data-formBtn
                 type="submit"
-                value="Enviar mensaje"/>
-            </form>
-          </div>
-        </section>
-  
-        <footer class="footer">
-          <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
-          <h2 class="footer__fecha">2023</h2>
-          <div class="footer__redes">
-            <a href="https://github.com/sabrinavr"><img src="../assets/github.svg " alt="git"/></a>
-            <a href="https://www.linkedin.com/in/sabrina-van-remoortere-2b18b62b/"><img src="../assets/linkedin.svg" alt="linkedin"/></a>
-          </div>
-        </footer>
+                value="Add product"
+              >
+                Agregar producto
+              </button>
+            </a>
+          </form>
+        </div>
+      </section>
 
-        </section>
+      <section class="formulario">
+        <div class="formulario__container">
+          <a href="../inicio.html">
+            <img class="formulario__logo" src="../assets/Logo.svg" alt="logo" />
+          </a>
 
+          <div class="contacto__info">
+            <ul>
+              <li class="contacto__info-li">
+                <a class="contacto__info-text" href="#">Quiénes somos</a>
+              </li>
+              <li class="contacto__info-li">
+                <a class="contacto__info-text" href="#"
+                  >Política de privacidad</a
+                >
+              </li>
+              <li class="contacto__info-li">
+                <a class="contacto__info-text" href="#"
+                  >Programa de fidelidad</a
+                >
+              </li>
+              <li class="contacto__info-li">
+                <a class="contacto__info-text" href="#">Nuestras Tiendas</a>
+              </li>
+              <li class="contacto__info-li">
+                <a class="contacto__info-text" href="#"
+                  >Quiero ser franquiciado</a
+                >
+              </li>
+              <li class="contacto__info-li">
+                <a class="contacto__info-text" href="#">Anúnciate aquí</a>
+              </li>
+            </ul>
+          </div>
+
+          <form
+            action=""
+            class="formulario__contacto"
+            id="formulario__contacto"
+          >
+            <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
+
+            <div class="form__contacto__nombre-container">
+              <label for="contact__nombre"></label>
+              <input
+                class="formulario__contacto_nombreInput"
+                id="contact__nombre"
+                name="contact__nombre"
+                placeholder="Escribe aquí tu nombre"
+                data-tipo="nombre"
+                title="Nombre solamente acepta letras y espacios en blanco"
+                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                required
+                type="text"
+                maxlength="40"
+              />
+
+              <p class="formulario__contacto__error-nombre none">
+                Nombre es un campo requerido y solamente acepta letras y
+                espacios en blanco
+              </p>
+            </div>
+
+            <div class="form__contacto__textarea-container">
+              <label for="contact__mensaje"></label>
+              <textarea
+                class="formulario__contacto__mensaje"
+                id="contact__mensaje"
+                name="contact__mensaje"
+                placeholder="Escribe aquí tu mensaje"
+                title="Por favor escribe un mensaje de máximo 120 caracteres para que sepamos cómo ayudarte"
+                required
+                data-pattern="^[\s\S]{1,250}$"
+                cols="60"
+                rows="4"
+                maxlength="120"
+              ></textarea>
+
+              <p class="formulario__contacto__error-mensaje none">
+                Por favor escribe un mensaje de máximo 120 caracteres para que
+                sepamos cómo ayudarte
+              </p>
+            </div>
+
+            <input
+              class="contacto__boton"
+              id="contacto__boton"
+              type="submit"
+              value="Enviar mensaje"
+            />
+
+            <div id="formulario__contacto__respuesta" class="none">
+              <p id="completado"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
+        <h2 class="footer__fecha">2023</h2>
+        <div class="footer__redes">
+          <a href="https://github.com/sabrinavr"
+            ><img src="../assets/github.svg" alt="git"
+          /></a>
+          <a href="https://www.linkedin.com/in/sabrina-van-remoortere-2b18b62b/"
+            ><img src="../assets/linkedin.svg" alt="linkedin"
+          /></a>
+        </div>
+      </footer>
     </main>
+    
+    <script src="../js/addproduct.js"></script>
     <script src="../js/validacionhableconnosotros.js"></script>
-</body>
+  </body>
 </html>
