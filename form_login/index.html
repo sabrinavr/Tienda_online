@@ -54,12 +54,15 @@
                     </label>
 
                     <label for="login__contrasena" class="formulario__login__contrasena"> 
-                        <input class="formulario__login__contrasenaInput" data-password 
+                        <input class="formulario__login__contrasenaInput" 
+                        data-password 
                         id="login__contrasena" 
                         name="contrasena"  
                         placeholder="Escribe aquí tu contraseña" 
                         required 
-                        type="password"></input>
+                        type="password"
+                        > </input>
+                        
                     </label>
 
                     <input class="formulario__login__boton" id ="formulario__login__boton"  type="submit" value="Login">
@@ -107,6 +110,7 @@
               action=""
               class="formulario__contacto"
               id="formulario__contacto"
+              data-form
             >
               <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
   
@@ -117,7 +121,7 @@
                   id="contact__nombre"
                   name="contact__nombre"
                   placeholder="Escribe aquí tu nombre"
-                  data-tipo="nombre"
+                  
                   title="Nombre solamente acepta letras y espacios en blanco"
                   pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
                   required
@@ -144,6 +148,7 @@
                   cols="60"
                   rows="4"
                   maxlength="120"
+                  
                 ></textarea>
   
                 <p class="formulario__contacto__error-mensaje none">
@@ -181,6 +186,8 @@
       </main>
   
       <script src="../js/admin_login.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" referrerpolicy="no-referrer"></script>
+      <script type="module" src="../controllers/login.controller.js"></script>
       <script src="../js/validacionhableconnosotros.js"></script>
       
     </body>

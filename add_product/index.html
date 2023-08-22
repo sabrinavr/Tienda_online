@@ -62,9 +62,9 @@
         <div class="form__addproduct__container">
           <h2 class="formulario__addproduct__titulo">Agregar nuevo producto</h2>
 
-          <form class="formulario__addproduct">
+          <form class="formulario__addproduct" data-form>
             <label class="formulario__addproduct__url"
-              ><input
+              > <input
                 class="formulario__addproduct__urlInput"
                 id="addproduct__url"
                 name="url"
@@ -73,7 +73,7 @@
                 required
                 type="file"
               />
-              <img id="imagen-previa" src="#" alt="Vista previa de la imagen" style="display: none;">
+              <img id="imagen-previa" data-img src="#" alt="Vista previa de la imagen" style="display: none;">
             </label>
 
             <select class="form-selection" data-categoria multiple required>
@@ -256,6 +256,9 @@
     </main>
     
     <script src="../js/addproduct.js"></script>
+    <script src="../servicios/productos-servicios.js"></script>
+    <script type="module" src="../controllers/productos-controller.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" referrerpolicy="no-referrer"></script>
     <script src="../js/validacionhableconnosotros.js"></script>
   </body>
 </html>

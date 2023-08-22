@@ -28,7 +28,7 @@ formularioBtn.addEventListener('click', (event) => {
       mensajeExito.classList.add('mensaje-exito');
       formularioAdd.appendChild(mensajeExito);
 
-      // Reiniciar página después de 10 segundos
+      // Reiniciar página después de 7 segundos
       setTimeout(() => {
         window.location.reload();
       }, 7000);
@@ -41,6 +41,7 @@ formularioBtn.addEventListener('click', (event) => {
     }
   });
 
+  //Hacer que se vea la imagen previa del archivo elegido
   inputImagen.addEventListener("change", function (evento) {
     const archivo = evento.target.files[0];
   

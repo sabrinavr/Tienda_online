@@ -25,8 +25,6 @@
       "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
     }
   ],
-
-
   "categories": [
     {
       "id": 1,
@@ -41,19 +39,15 @@
       "name": "Cuidado Personal"
     }
   ],
-
-
   "productos": [
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/137-1024x1024.jpg",
       "name": "Cepillo corporal P",
-      "price": "$130",
+      "price": "$135",
       "categoria": "Productos Zero Waste",
       "description": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad.",
       "id": "e0ea324b-356a-4423-a619-09338941354b"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/19.-PNG.png",
       "name": "Cepillo corporal M",
@@ -62,8 +56,6 @@
       "description": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad.",
       "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/68-2-1024x1024.jpg",
       "name": "Jabonera",
@@ -72,8 +64,6 @@
       "description": "100% naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
       "id": "cfc5e01d-20fb-4a41-8dd2-0040dcf8826b"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/17-1-1024x1024.jpg",
       "name": "Tallador de ixtle",
@@ -82,8 +72,6 @@
       "description": "100% naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
       "id": "6ae6f0b1-c194-4c7c-a08f-7b6460d3ff88"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/36-PNG.png",
       "name": "Ixtle facial",
@@ -92,8 +80,6 @@
       "description": "Perfecto para la exfoliación diaria que permite la oxigenación y regeneración celular de la piel y la prevención del acné. Usar con el limpiador habitual, con suaves movimientos circulares.",
       "id": "0515aaa6-6324-49b9-99a9-ebc168160964"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/135-1024x1024.jpg",
       "name": "Guante de ixtle",
@@ -102,8 +88,6 @@
       "description": "100% naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
       "id": "d77d874c-8778-42f1-8a02-d8e6a705cfc5"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/136.jpg",
       "name": "Aceite de coco 470 ml",
@@ -112,8 +96,6 @@
       "description": "El aceite de coco es un superalimento cuya combinación única de ácidos grasos de cadena media trae numerosos beneficios para la salud. Los ácidos láurico y caprílico, presentes en grandes cantidades en este aceite, estimulan el metabolismo y el sistema inmunológico, a la vez que ayudan a la regulación hormonal y de azúcar en sangre. También se ha demostrado su eficacia como complemento en tratamiento y prevención de enfermedades degenerativas que incluyen deterioro cognitivo. Además, es estable a altas temperaturas, por lo que se puede utilizar en cocina sin riesgo de aparición de grasas trans. También es utilizado de forma externa, como hidratante y como componente de productos cosméticos.",
       "id": "bf69cef6-8af8-44b7-8cdb-bfa30b8d1b5d"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/58-JPG.jpg",
       "name": "Aceite de aguacate 250ml",
@@ -122,8 +104,6 @@
       "description": "Con dos premios a nivel internacional y sabor excepcional, este aceite sirve para cocinar, con un alto punto de humo, y también es alto en vitamina E, A, B y D y potasio.",
       "id": "4174188c-b724-4b27-9951-2e21de3b5506"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/35-JPG.jpg",
       "name": "Aceite de ajonjolí 250ml",
@@ -132,8 +112,6 @@
       "description": "Delicioso sabor, perfecto para aderezos y cocina a no muy alta temperatura. En Ayurveda, se usa mucho para masajes y otros tratamientos. Alto contenido en calcio.",
       "id": "3eed7026-ee93-46ac-a9bf-745dd3747748"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/127-1024x1024.jpg",
       "name": "Aceite de cacahuate 250ml",
@@ -142,8 +120,6 @@
       "description": "Delicioso sabor, perfecto para aderezos y cocina a no muy alta temperatura. En Ayurveda, se usa mucho para masajes y otros tratamientos. Alto contenido en calcio.",
       "id": "cb730e61-97f8-4fe8-aabf-4c3db553cc0c"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/56-PNG-1.png",
       "name": "Aceite de linaza 250ml",
@@ -152,8 +128,6 @@
       "description": "De sabor fuerte y amargo, puede tomarse en ayunas y usarse en piel y mascarillas capilares, para entre otras cosas mejorar uñas, pieles hipersensibles y cabello. Muy alto en ácidos grasos omega 3 y perfecto para promover el buen estado del sistema nervioso. Debe conservarse preferentemente en frío.",
       "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/53-PNG-2.png",
       "name": "Aceite de oliva 750ml",
@@ -162,8 +136,6 @@
       "description": "El aceite de oliva de Filigranas está producido de forma agroecológica en Tamaulipas a partir de aceituna arbequina. Tiene un sabor intenso pero delicado que lo hace ideal para ensaladas, aderezos, salsas y más. Por su contenido en vitamina E, previene el envejecimiento celular y también la formación de células cancerosas. Ayuda a reducir el colesterol malo, aumentando el bueno. En ayunas, protege el sistema digestivo de acidez y ayuda en la digestión, siendo muy beneficioso para el hígado.",
       "id": "89a365f2-00d2-465d-bbaf-a405aed6255f"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/92-1024x1024.jpg",
       "name": "Crema regeneradora 120 ml",
@@ -172,8 +144,6 @@
       "description": "Uno de nuestros productos preferidos, la crema regeneradora contiene aceite de coco virgen, manteca de cacao, oleato de caléndula hecho con aceite de oliva virgen, aceite esencial de linaloe y cera de abeja de producción local de primerísima calidad. Todos sus ingredientes se combinan para ofrecer lo mejor en propiedades regeneradoras y nutritivas para la piel, siendo perfecta para procesos de cicatrización, prevención de estrías e hidratación profunda de la manera más natural. Tiene un factor de bloqueador solar natural de un 20. Puede usarse como crema facial de día y de noche, suavizando una pequeña cantidad entre las manos y aplicándola con un suave masaje en la cara. Apta para las pieles más sensibles y con tendencia a dermatitis, soriasis o eccema. Ayuda a suavizar las marcas.",
       "id": "529959de-570d-4fdf-b0ee-e13733b4852d"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/34-PNG.png",
       "name": "Desodorante de alumbre 120 ml",
@@ -182,8 +152,6 @@
       "description": "Este desodorante está hecho de piedra de alumbre con aceite esencial de árbol de té, no tiene antitranspirantes ni disruptores hormonales y tiene un olor fresco y suave.",
       "id": "2a81d270-76a6-418c-b33f-a1b05136f831"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/38.jpg",
       "name": "Bálsamo labial hidratante",
@@ -192,8 +160,6 @@
       "description": "Hechos con aceite de coco extra virgen Filigranas, manteca de cacao, oleato de caléndula hecho con aceite de oliva virgen, cera de abeja pura de producción local y aceite esencial de linaloe. Aportan brillo, hidratación, previniendo infecciones gracias a las propiedades curativas de la cera de abeja.",
       "id": "0e4e5716-a86c-4940-a13d-116c87aa393a"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/27.jpg",
       "name": "Mascarilla de miel y carbón activado 120ml",
@@ -202,8 +168,6 @@
       "description": "Hecha con carbón activado de cáscara de coco (que purifica la piel y absorbe toxinas) y miel pura de abeja de producción local (antisépticas y cicatrizante).",
       "id": "0891f7aa-853e-49cc-a97c-f8a8e97e1517"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/14-png-1.png",
       "name": "Pasta dental natural 120 ml",
@@ -212,8 +176,6 @@
       "description": "Esta pasta dental está hecha de aceite de coco, con bicarbonato de sodio, carbonato de magnesio, aceites esenciales de clavo, menta y árbol de té.",
       "id": "bc872b45-f582-4cd9-82b4-9feb69d79406"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/106.jpg",
       "name": "Tónico facial rejuvenecedor",
@@ -222,8 +184,6 @@
       "description": "Tónico facial rejuvenecedor de agua de rosas, arroz y avena. Refresca, calma, cierra los poros y retrasa el envejecimiento celular, además de atenuar los signos de edad. Fija el maquillaje. Para piel madura, con manchas o irritada por el sol.",
       "id": "20a7432e-271d-4187-b56a-a64880503002"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/33-PNG-774x1024.png",
       "name": "Repelente natural de insectos 120 ml",
@@ -232,8 +192,6 @@
       "description": "El repelente natural de Filigranas está hecho con una base de clavo de olor, a la que se la añade aceites esenciales de citronella y rosa. Protege contra mosquitos y chaquistes o jejenes. El aceite de almendra funciona como fijador para alargar el tiempo de protección, además de suavizar la piel y calmar piquetes anteriores.",
       "id": "102e2a6e-686b-4c63-a922-49a0d000e6f3"
     },
-
-
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-15-at-8.37.21-PM.jpeg",
       "name": "Aceite para masaje relajante 125ml",
