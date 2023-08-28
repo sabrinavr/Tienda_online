@@ -73,24 +73,18 @@
                 required
                 type="file"
               />
-              <img id="imagen-previa" data-img src="#" alt="Vista previa de la imagen" style="display: none;">
+              <img id="imagen-previa" src="#" alt="Vista previa de la imagen" style="display: none">
             </label>
 
             <select class="form-selection" data-categoria multiple required>
               <option disabled selected value="">Selecciona categoría</option>
-              <option data-ProductosZeroWaste value="Productos Zero Waste">
-                Productos Zero Waste
-              </option>
-              <option data-AceitesVirgenes value="Aceites vírgenes">
-                Aceites vírgenes
-              </option>
-              <option data-diversos value="CuidadoPersonal">
-                Cuidado Personal
-              </option>
+              <option value="Productos Zero Waste">Productos Zero Waste</option>
+              <option  value="Aceites vírgenes">Aceites vírgenes</option>
+              <option value="CuidadoPersonal">Cuidado Personal</option>
             </select>
 
-            <label class="formulario__addproduct__nombre"
-              ><input
+            <label class="formulario__addproduct__nombre"> 
+              <input
                 class="formulario__addproduct__nombreInput"
                 id="addproduct__nombre"
                 name="nombre"
@@ -103,8 +97,8 @@
               />
             </label>
 
-            <label class="formulario__addproduct__precio"
-              ><input
+            <label class="formulario__addproduct__precio">
+              <input
                 class="formulario__addproduct__precioInput"
                 id="addproduct__precio"
                 name="precio"
@@ -134,10 +128,7 @@
                 id="formulario__addproduct__boton"
                 data-formBtn
                 type="submit"
-                value="Add product"
-              >
-                Agregar producto
-              </button>
+                value="Add product">Agregar producto</button>
             </a>
           </form>
         </div>
@@ -257,8 +248,8 @@
     
     <script src="../js/addproduct.js"></script>
     <script src="../servicios/productos-servicios.js"></script>
-    <script type="module" src="../controllers/productos-controller.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../controllers/productos-controller.js" ></script>
     <script src="../js/validacionhableconnosotros.js"></script>
   </body>
 </html>

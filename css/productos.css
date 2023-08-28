@@ -14,7 +14,9 @@ section.productos{
 .product__title{
     font-size: 32px;
     font-weight: 700;
+    color: var(--verde-oscuro);
 }
+
 .flecha{
     height: 24px;
     width: 24px;
@@ -36,18 +38,14 @@ section.productos{
 .product__list{
     display: flex;
     gap: 16px;
-    
+    justify-content: space-around;
 }
-
 
 .product__list img{
     padding-bottom: 8px;
-    width: 176px;
-    height: 12em;
-    width: 9em;
+    height: 13em;
+    width: auto;
     border-radius: .5em;
-   
-
 }
 
 .product__list h2{

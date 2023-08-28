@@ -1,45 +1,5 @@
 {
-  "users": [
-    {
-      "name": "test",
-      "email": "admin@admin.com",
-      "password": "admin",
-      "id": "e330000b-cadd-4a35-911f-c08d8eb4520d"
-    },
-    {
-      "name": "1",
-      "email": "cc@c.C",
-      "password": "c",
-      "id": "beb63de4-60e3-49a9-8c0d-fcb20430cb50"
-    },
-    {
-      "name": "2",
-      "email": "cesar@gmail.com",
-      "password": "123",
-      "id": "d336f49d-c9f2-49ff-91fe-804b38fe4694"
-    },
-    {
-      "name": "3",
-      "email": "sabrina@gmail.com",
-      "password": "1234",
-      "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "name": "Productos Zero Waste"
-    },
-    {
-      "id": 2,
-      "name": "Aceites Vírgenes"
-    },
-    {
-      "id": 3,
-      "name": "Cuidado Personal"
-    }
-  ],
-  "productos": [
+  "productos" : [
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/137-1024x1024.jpg",
       "name": "Cepillo corporal P",
@@ -98,7 +58,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/58-JPG.jpg",
-      "name": "Aceite de aguacate 250ml",
+      "name": "Aceite aguacate 250ml",
       "price": "$130",
       "categoria": "Aceites vírgenes",
       "description": "Con dos premios a nivel internacional y sabor excepcional, este aceite sirve para cocinar, con un alto punto de humo, y también es alto en vitamina E, A, B y D y potasio.",
@@ -106,7 +66,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/35-JPG.jpg",
-      "name": "Aceite de ajonjolí 250ml",
+      "name": "Aceite ajonjolí 250ml",
       "price": "$110",
       "categoria": "Aceites vírgenes",
       "description": "Delicioso sabor, perfecto para aderezos y cocina a no muy alta temperatura. En Ayurveda, se usa mucho para masajes y otros tratamientos. Alto contenido en calcio.",
@@ -114,7 +74,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/127-1024x1024.jpg",
-      "name": "Aceite de cacahuate 250ml",
+      "name": "Aceite cacahuate 250ml",
       "price": "$110",
       "categoria": "Aceites vírgenes",
       "description": "Delicioso sabor, perfecto para aderezos y cocina a no muy alta temperatura. En Ayurveda, se usa mucho para masajes y otros tratamientos. Alto contenido en calcio.",
@@ -138,7 +98,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/92-1024x1024.jpg",
-      "name": "Crema regeneradora 120 ml",
+      "name": "Crema regeneradora G",
       "price": "$150",
       "categoria": "Cuidado Personal",
       "description": "Uno de nuestros productos preferidos, la crema regeneradora contiene aceite de coco virgen, manteca de cacao, oleato de caléndula hecho con aceite de oliva virgen, aceite esencial de linaloe y cera de abeja de producción local de primerísima calidad. Todos sus ingredientes se combinan para ofrecer lo mejor en propiedades regeneradoras y nutritivas para la piel, siendo perfecta para procesos de cicatrización, prevención de estrías e hidratación profunda de la manera más natural. Tiene un factor de bloqueador solar natural de un 20. Puede usarse como crema facial de día y de noche, suavizando una pequeña cantidad entre las manos y aplicándola con un suave masaje en la cara. Apta para las pieles más sensibles y con tendencia a dermatitis, soriasis o eccema. Ayuda a suavizar las marcas.",
@@ -146,7 +106,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/34-PNG.png",
-      "name": "Desodorante de alumbre 120 ml",
+      "name": "Desodorante alumbre",
       "price": "$100",
       "categoria": "Cuidado Personal",
       "description": "Este desodorante está hecho de piedra de alumbre con aceite esencial de árbol de té, no tiene antitranspirantes ni disruptores hormonales y tiene un olor fresco y suave.",
@@ -162,7 +122,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/27.jpg",
-      "name": "Mascarilla de miel y carbón activado 120ml",
+      "name": "Mascarilla miel 120ml",
       "price": "$80.00",
       "categoria": "Cuidado Personal",
       "description": "Hecha con carbón activado de cáscara de coco (que purifica la piel y absorbe toxinas) y miel pura de abeja de producción local (antisépticas y cicatrizante).",
@@ -186,7 +146,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/33-PNG-774x1024.png",
-      "name": "Repelente natural de insectos 120 ml",
+      "name": "Repelente natural 120 ml",
       "price": "$75",
       "categoria": "Cuidado Personal",
       "description": "El repelente natural de Filigranas está hecho con una base de clavo de olor, a la que se la añade aceites esenciales de citronella y rosa. Protege contra mosquitos y chaquistes o jejenes. El aceite de almendra funciona como fijador para alargar el tiempo de protección, además de suavizar la piel y calmar piquetes anteriores.",
@@ -194,7 +154,7 @@
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-15-at-8.37.21-PM.jpeg",
-      "name": "Aceite para masaje relajante 125ml",
+      "name": "Aceite masaje relax 125ml",
       "price": "$140.00",
       "categoria": "Cuidado Personal",
       "description": "Perfecto para masajes y terapias relajantes, y para hidratar la piel del cuerpo después del baño. Efecto relajante y antidepresivo.",
