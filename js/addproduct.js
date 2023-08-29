@@ -30,7 +30,7 @@ formularioBtn.addEventListener('click', (event) => {
 
       // Reiniciar página después de 7 segundos
       setTimeout(() => {
-        window.location.reload();
+        window.location.href = "../productos/index.html";
       }, 7000);
     } else {
       // Mostrar mensaje de error
@@ -51,7 +51,7 @@ formularioBtn.addEventListener('click', (event) => {
       lector.onload = function (e) {
         imagenPrevia.src = e.target.result;
         imagenPrevia.style.display = "block";
-        imagenPrevia.style.width = "50%"
+        imagenPrevia.style.width = "25%"
       };
   
       lector.readAsDataURL(archivo);

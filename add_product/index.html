@@ -50,7 +50,7 @@
         </div>
       </div>
       <div class="header__caja__admin__lupa">
-        <a class="header__admin" href="../form_login/index.html">
+        <a class="header__admin" href="../productos/index.html">
           <button class="header__admin-boton">Menú Administrador</button>
         </a>
         <img class="header__lupa" alt="buscar" src="../assets/Icone.svg" />
@@ -63,27 +63,30 @@
           <h2 class="formulario__addproduct__titulo">Agregar nuevo producto</h2>
 
           <form class="formulario__addproduct" data-form>
-            <label class="formulario__addproduct__url"
-              > <input
-                class="formulario__addproduct__urlInput"
-                id="addproduct__url"
-                name="url"
-                placeholder="URL de la imagen"
-                data-url
-                required
-                type="file"
-              />
-              <img id="imagen-previa" src="#" alt="Vista previa de la imagen" style="display: none">
-            </label>
+            <input
+              class="formulario__addproduct__urlInput"
+              id="addproduct__url"
+              name="url"
+              placeholder="URL de la imagen"
+              data-url
+              required
+              type="file"
+            />
+            <img
+              id="imagen-previa"
+              src="#"
+              alt="Vista previa de la imagen"
+              style="display: none"
+            />
 
-            <select class="form-selection" data-categoria multiple required>
+           <!-- <select class="form-selection" data-categoria multiple required>
               <option disabled selected value="">Selecciona categoría</option>
               <option value="Productos Zero Waste">Productos Zero Waste</option>
-              <option  value="Aceites vírgenes">Aceites vírgenes</option>
+              <option value="Aceites vírgenes">Aceites vírgenes</option>
               <option value="CuidadoPersonal">Cuidado Personal</option>
-            </select>
+            </select> -->
 
-            <label class="formulario__addproduct__nombre"> 
+            <label class="formulario__addproduct__nombre">
               <input
                 class="formulario__addproduct__nombreInput"
                 id="addproduct__nombre"
@@ -128,7 +131,10 @@
                 id="formulario__addproduct__boton"
                 data-formBtn
                 type="submit"
-                value="Add product">Agregar producto</button>
+                value="Add product"
+              >
+                Agregar producto
+              </button>
             </a>
           </form>
         </div>
@@ -245,11 +251,17 @@
         </div>
       </footer>
     </main>
-    
-    <script type="module" src="../controllers/crear-productos-controller.js"></script>
+
+    <script
+      type="module"
+      src="../controllers/crear-productos-controller.js"
+    ></script>
     <script src="../js/addproduct.js"></script>
-    <script src="../servicios/productos-servicios.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" referrerpolicy="no-referrer"></script>
+    <script type="module" src="../servicios/productos-servicios.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      referrerpolicy="no-referrer"
+    ></script>
     <script src="../js/validacionhableconnosotros.js"></script>
   </body>
 </html>

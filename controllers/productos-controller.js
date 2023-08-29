@@ -1,7 +1,7 @@
 import { productosServicios } from "../servicios/productos-servicios.js";
 import { formatPrice } from "../formatPrice.js";
 
-const nuevoProducto = (imageUrl, name, price,id) => {
+const nuevoProducto = (imageUrl, name, price, id,) => {
     const card = document.createElement("div");
 
     const contenido = `
