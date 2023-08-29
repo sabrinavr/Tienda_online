@@ -1,7 +1,8 @@
 import { productosServicios } from "../servicios/productos-servicios.js";
+import { formatPrice } from "../formatPrice.js";
 
 const nuevoProducto = (imageUrl, name, price,id) => {
-    const card = document.createElement("div")
+    const card = document.createElement("div");
 
     const contenido = `
     <div class="product__list_producto">
@@ -13,28 +14,30 @@ const nuevoProducto = (imageUrl, name, price,id) => {
     ;
 
     card.innerHTML = contenido;
+    card.dataset.id = id;
 
-    return card
+    return card;
 };
 
 const productos = document.querySelector("[data-adminProducts]")
 
 const render = async() => {
     try {
-        const listaProductos = await productosServicios.listaProductos()
+        const listaProductos = await productosServicios.listaProductos();
 
-        listaProductos.forEach(elemento => {
-            productos.appendChild(nuevoProducto(
+        listaProductos.forEach((elemento) => {
+            productos.appendChild(
+                nuevoProducto(
                 elemento.imageUrl,
                 elemento.name,
                 elemento.price,
                 elemento.id,
-            ))
+            ));
             
         });
 
     } catch(error){
-        console.log(error)
+        console.log(error);
 
     }
     

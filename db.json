@@ -1,5 +1,32 @@
 {
-  "productos" : [
+  "users": [
+    {
+      "name": "test",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "id": "e330000b-cadd-4a35-911f-c08d8eb4520d"
+    },
+    {
+      "name": "1",
+      "email": "cc@c.C",
+      "password": "c",
+      "id": "beb63de4-60e3-49a9-8c0d-fcb20430cb50"
+    },
+    {
+      "name": "2",
+      "email": "cesar@gmail.com",
+      "password": "123",
+      "id": "d336f49d-c9f2-49ff-91fe-804b38fe4694"
+    },
+    {
+      "name": "3",
+      "email": "sabrina@gmail.com",
+      "password": "1234",
+      "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
+    }
+  ],
+
+  "productos": [
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/137-1024x1024.jpg",
       "name": "Cepillo corporal P",

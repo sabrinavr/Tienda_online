@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ES">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../assets/Símbolo 001.png" type="image/x-icon" />
+    <title>Filigranas-Productos Naturales</title>
+    <link href="../css/style.css" rel="stylesheet" />
+    <link href="../css/reset.css" rel="stylesheet" />
+    <link href="../css/normalize.css" rel="stylesheet" />
+    <link href="../css/header.css" rel="stylesheet" />
+    <link href="../css/banner.css" rel="stylesheet" />
+    <link href="../css/edit-product.css" rel="stylesheet" />
+    <link href="../css/formulario.css" rel="stylesheet" />
+    <link href="../css/footer.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header class="header__container">
+      <div class="header__items">
+        <a class="header__logo" href="../index.html">
+          <img class="header__logo-image" alt="logo" src="../assets/Logo.svg" />
+        </a>
+        <div class="header__search" id="search__container">
+          <input
+            class="header__search-input"
+            id="search__items"
+            placeholder="¿Qué quieres buscar?"
+            type="text"
+          />
+
+          <button class="header__search-button" id="search__action">
+            <img
+              class="header__search-icon"
+              alt="botonbuscar"
+              src="../assets/Icone.svg"
+            />
+          </button>
+        </div>
+      </div>
+
+      <a class="header__login" href="../form_login/index.html">
+        <button class="header__login-boton">Login</button>
+      </a>
+    </header>
+
+    <section class="general-products">
+      <div class="products_title">Editar producto</div>
+      <section class="products-section" data-allProducts>
+        <form action="#" class="form-control" data-form>
+          <img src="" data-url />
+          <input
+            class="product-add_input__name"
+            type="text"
+            placeholder="Nombre del producto"
+            data-nombre
+          />
+          <input
+            class="product-add_input__price"
+            type="text"
+            placeholder="Precio del producto"
+            data-precio
+          />
+          <textarea
+            class="product-add_textarea__description"
+            type="text"
+            placeholder="Descripcion del producto"
+            data-descripcion
+          ></textarea>
+          <button type="submit" class="product-submit_btn">
+            Actualizar producto
+          </button>
+        </form>
+      </section>
+    </section>
+  </body>
+  <section class="formulario">
+    <div class="formulario__container">
+      <a href="../inicio.html">
+        <img class="formulario__logo" src="../assets/Logo.svg" alt="logo" />
+      </a>
+
+      <div class="contacto__info">
+        <ul>
+          <li class="contacto__info-li">
+            <a class="contacto__info-text" href="#">Quiénes somos</a>
+          </li>
+          <li class="contacto__info-li">
+            <a class="contacto__info-text" href="#">Política de privacidad</a>
+          </li>
+          <li class="contacto__info-li">
+            <a class="contacto__info-text" href="#">Programa de fidelidad</a>
+          </li>
+          <li class="contacto__info-li">
+            <a class="contacto__info-text" href="#">Nuestras Tiendas</a>
+          </li>
+          <li class="contacto__info-li">
+            <a class="contacto__info-text" href="#">Quiero ser franquiciado</a>
+          </li>
+          <li class="contacto__info-li">
+            <a class="contacto__info-text" href="#">Anúnciate aquí</a>
+          </li>
+        </ul>
+      </div>
+
+      <form action="" class="formulario__contacto" id="formulario__contacto">
+        <h2 class="formulario__contacto_titulo">Habla con nosotros</h2>
+
+        <div class="form__contacto__nombre-container">
+          <label for="contact__nombre"></label>
+          <input
+            class="formulario__contacto_nombreInput"
+            id="contact__nombre"
+            name="contact__nombre"
+            placeholder="Escribe aquí tu nombre"
+            data-tipo="nombre"
+            title="Nombre solamente acepta letras y espacios en blanco"
+            pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+            required
+            type="text"
+            maxlength="40"
+          />
+
+          <p class="formulario__contacto__error-nombre none">
+            Nombre es un campo requerido y solamente acepta letras y espacios en
+            blanco
+          </p>
+        </div>
+
+        <div class="form__contacto__textarea-container">
+          <label for="contact__mensaje"></label>
+          <textarea
+            class="formulario__contacto__mensaje"
+            id="contact__mensaje"
+            name="contact__mensaje"
+            placeholder="Escribe aquí tu mensaje"
+            title="Por favor escribe un mensaje de máximo 120 caracteres para que sepamos cómo ayudarte"
+            required
+            data-pattern="^[\s\S]{1,250}$"
+            cols="60"
+            rows="4"
+            maxlength="120"
+          ></textarea>
+
+          <p class="formulario__contacto__error-mensaje none">
+            Por favor escribe un mensaje de máximo 120 caracteres para que
+            sepamos cómo ayudarte
+          </p>
+        </div>
+
+        <input
+          class="contacto__boton"
+          id="contacto__boton"
+          type="submit"
+          value="Enviar mensaje"
+        />
+
+        <div id="formulario__contacto__respuesta" class="none">
+          <p id="completado"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <h2 class="footer__texto">Desarrollado por Sabrina Van Remoortere</h2>
+    <h2 class="footer__fecha">2023</h2>
+    <div class="footer__redes">
+      <a href="https://github.com/sabrinavr"
+        ><img src="../assets/github.svg" alt="git"
+      /></a>
+      <a href="https://www.linkedin.com/in/sabrina-van-remoortere-2b18b62b/"
+        ><img src="../assets/linkedin.svg" alt="linkedin"
+      /></a>
+    </div>
+  </footer>
+
+  <script
+    type="module"
+    src="../controllers/actualiza-producto-controller.js"
+  ></script>
+</html>

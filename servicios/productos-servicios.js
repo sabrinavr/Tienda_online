@@ -12,13 +12,13 @@ const listarUnProducto = (id) => {
 };
 
 //POST
-const crearProducto = (imageUrl, categoria, name, price) => {
+const crearProducto = (imageUrl, name, price) => {
     return fetch(`http://localhost:3000/productos`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({imageUrl, categoria, name, price, 
+        body: JSON.stringify({imageUrl, name, price, 
         }),
     
     }).then((respuesta) => {
@@ -30,13 +30,13 @@ const crearProducto = (imageUrl, categoria, name, price) => {
 };
 
 // PUT/PATCH
-const alteraProducto = async (imageUrl, categoria, name, price,) => {
+const alteraProducto = async (imageUrl, categoria, name, price, id) => {
     return fetch(`http://localhost:3000/producto/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({imageUrl, categoria, name, price,
+      body: JSON.stringify({imageUrl, name, price,
       }),
     })
       .then((respuesta) => {

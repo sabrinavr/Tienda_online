@@ -38,8 +38,7 @@ section.allproducts{
 .allproducts__list{
     display: flex;
     flex-wrap: wrap;
-    gap: 7px;
-    justify-content: space-between;
+    gap: 12px;
     padding-top: 50px;
     padding-bottom: 64px;
 }
