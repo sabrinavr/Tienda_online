@@ -2,7 +2,7 @@
 
 const listaProductos = () => 
     fetch("http://localhost:3000/productos")
-    .then(respuesta => respuesta.json())
+    .then((respuesta) => respuesta.json())
     .catch((error) => console.log(error));
 
 const listarUnProducto = (id) => {
@@ -12,31 +12,31 @@ const listarUnProducto = (id) => {
 };
 
 //POST
-const crearProducto = (imageUrl, name, price, id,) => {
+const crearProducto = (imageUrl, name, price) => {
     return fetch(`http://localhost:3000/productos`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify({imageUrl, name, price, id,
+        body: JSON.stringify({imageUrl, name, price,
         }),
     
     }).then((respuesta) => {
     if (respuesta.ok) {
-        return respuesta.json();
+        return respuesta.body;
     }
     throw new Error("No fue posible crear un producto");
 });
 };
 
 // PUT/PATCH
-const alteraProducto = async (imageUrl, name, price, id) => {
-    return fetch(`http://localhost:3000/producto/${id}`, {
+const alteraProducto = async (id, name, price, descripcion) => {
+    return fetch(`http://localhost:3000/productos/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({imageUrl, name, price, id,
+      body: JSON.stringify({id, name, price, descripcion
       }),
     })
       .then((respuesta) => {
@@ -47,7 +47,7 @@ const alteraProducto = async (imageUrl, name, price, id) => {
 
   // DELETE
 const deleteProducto = async (id) => {
-    return await fetch(`http://localhost:3000/producto/${id}`, {
+    return await fetch(`http://localhost:3000/productos/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",

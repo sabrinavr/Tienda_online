@@ -1,4 +1,4 @@
-import { productoServices } from "../servicios/producto-servicios.js";
+import { productosServicios } from "../servicios/productos-servicios.js";
 
 const getURL = new URL(window.location);
 
@@ -9,7 +9,7 @@ const inputNombre = document.querySelector("[data-nombre]");
 const inputPrecio = document.querySelector("[data-precio]");
 const inputDescripcion = document.querySelector("[data-descripcion]");
 
-productoServices.listarUnProducto(id).then((datos) => {
+productosServicios.listarUnProducto(id).then((datos) => {
   inputImageUrl.setAttribute("src", datos.imageUrl);
   inputNombre.value = datos.name;
   inputPrecio.value = datos.price;
@@ -21,7 +21,7 @@ const formulario = document.querySelector("[data-form]");
 formulario.addEventListener("submit", (evento) => {
   evento.preventDefault();
 
-  productoServices
+  productosServicios
     .alteraProducto(
       id,
       inputNombre.value,

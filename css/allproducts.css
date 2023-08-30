@@ -38,16 +38,18 @@ section.allproducts{
 .allproducts__list{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 12px;
     padding-top: 50px;
     padding-bottom: 64px;
+    color: var(--verde-oscuro);
 }
 
 .product__list_producto{
     padding-top: 2em;
 }
 
-.product__list_producto img{
+.product__list_producto_img{
     padding-bottom: 8px;
     width: auto;
     border-radius: .5em;
@@ -70,6 +72,30 @@ section.allproducts{
     font-size: 16px;
     color: var(--azul-100);
     font-weight: 700;
+}
+
+.product__list_producto_botones{
+    padding: 0 0 10px 10px;
+}
+
+.buttonDelete:hover{ 
+    cursor: pointer;
+}
+
+.buttonEdit:hover{
+    cursor: pointer;
+}
+
+.buttonEdit {
+    background-color: var(--verde4);
+    border-radius: 10px;
+    border: 1px solid var(--verde-oscuro);
+}
+
+.buttonDelete {
+    background-color: var(--morado);
+    border-radius: 10px;
+    border: 1px solid var(--verde-oscuro);
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

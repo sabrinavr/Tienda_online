@@ -1,27 +1,26 @@
-import { productosServicios } from "../servicios/producto-servicios.js";
-import { formatPrice } from "../formatterPrices.js";
+import { productosServicios } from "../servicios/productos-servicios.js";
+import { formatPrice } from "../formatPrice.js" ;
 
-const getProducts = (imageUrl, name, price, id) => {
+const getProducts = (name, price ,imageUrl, id) => {
   const card = document.createElement("div");
 
   const contenido = `
-    <div class="producto">
-        <div class="container">
+    <div class="product__list_producto">
+        <div class="product__list_producto_botones">
+
             <button class="buttonDelete" type="button">
               <img class="deleteImage" src="../assets/delete.png" alt="Borrar" />
             </button>
             
-            <a href="../screens/edit-product.html?id=${id}">
-            
+            <a href="../edit_product/edit_product.html?id=${id} ">
               <button class="buttonEdit" type="button">
                 <img class="editImage" src="../assets/edit.png" alt="Editar" />
               </button>
-            
             </a>
         </div>
         
-        <img src="${imageUrl}" alt="${name}">
-        <h1 class="product-name"> ${name} </h1>
+        <img class="product__list_producto_img" src="${imageUrl}" alt="${name}">
+        <h2 class="product-name"> ${name} </h1>
         <p class="precio">${formatPrice(price)}</p>
     </div>
     `;
@@ -37,7 +36,7 @@ productos.addEventListener("click", async (evento) => {
   if (deleteButton) {
     const producto = evento.target.closest("[data-id]");
     let id = producto.dataset.id;
-    productoServices
+    productosServicios
       .deleteProducto(id)
       .then((res) => {
         producto.remove();
@@ -54,9 +53,9 @@ const render = async () => {
     listaProductos.forEach((producto) => {
       productos.appendChild(
         getProducts(
-          producto.imageUrl,
           producto.name,
           producto.price,
+          producto.imageUrl,
           producto.id
         )
       );

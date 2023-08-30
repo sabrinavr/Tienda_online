@@ -8,8 +8,8 @@ const nuevoProducto = (imageUrl, name, price, id,) => {
     <div class="product__list_producto">
     <img src="${imageUrl}" alt="${name}"/>
     <h2>${name}</h2>
-    <p>${price}</p>
-    <a href="../productos.html?id=${id}">+ Info</a>
+    <p>${formatPrice(price)}</p>
+    <a href="../productos/index.html?id=${id}">+ Info</a>
     </div>`
     ;
 

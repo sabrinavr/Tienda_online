@@ -25,7 +25,6 @@
       "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
     }
   ],
-
   "productos": [
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/137-1024x1024.jpg",
@@ -41,7 +40,8 @@
       "price": "$165",
       "categoria": "Productos Zero Waste",
       "description": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad.",
-      "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e"
+      "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e",
+      "descripcion": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad!!!!"
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/68-2-1024x1024.jpg",
@@ -50,22 +50,6 @@
       "categoria": "Productos Zero Waste",
       "description": "100% naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
       "id": "cfc5e01d-20fb-4a41-8dd2-0040dcf8826b"
-    },
-    {
-      "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/17-1-1024x1024.jpg",
-      "name": "Tallador de ixtle",
-      "price": "$110",
-      "categoria": "Productos Zero Waste",
-      "description": "100% naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
-      "id": "6ae6f0b1-c194-4c7c-a08f-7b6460d3ff88"
-    },
-    {
-      "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/36-PNG.png",
-      "name": "Ixtle facial",
-      "price": "$75",
-      "categoria": "Productos Zero Waste",
-      "description": "Perfecto para la exfoliación diaria que permite la oxigenación y regeneración celular de la piel y la prevención del acné. Usar con el limpiador habitual, con suaves movimientos circulares.",
-      "id": "0515aaa6-6324-49b9-99a9-ebc168160964"
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/135-1024x1024.jpg",
@@ -110,10 +94,11 @@
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/56-PNG-1.png",
       "name": "Aceite de linaza 250ml",
-      "price": "$110",
+      "price": "$120",
       "categoria": "Aceites vírgenes",
       "description": "De sabor fuerte y amargo, puede tomarse en ayunas y usarse en piel y mascarillas capilares, para entre otras cosas mejorar uñas, pieles hipersensibles y cabello. Muy alto en ácidos grasos omega 3 y perfecto para promover el buen estado del sistema nervioso. Debe conservarse preferentemente en frío.",
-      "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470"
+      "id": "23ba121e-1cb8-4d71-b6f3-9e6d52b20470",
+      "descripcion": "De sabor fuerte y amargo, puede tomarse en ayunas y usarse en piel y mascarillas capilares, para entre otras cosas mejorar uñas, pieles hipersensibles y cabello. Muy alto en ácidos grasos omega 3 y perfecto para promover el buen estado del sistema nervioso. Debe conservarse preferentemente en frío."
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/53-PNG-2.png",
