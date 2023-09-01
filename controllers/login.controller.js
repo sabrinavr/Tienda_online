@@ -1,4 +1,4 @@
-import { loginServicios } from "../servicios/login.servicios";
+import { loginServicios } from "../servicios/login.servicios.js";
 
 const formularioLogin = document.querySelector("[data-form]");
 
@@ -7,10 +7,10 @@ formularioLogin.addEventListener("submit",(evento) => {
     const email = document.querySelector("[data-email]").value;
     const contrasena = document.querySelector("[data-password]").value;
     
-    if(email.value === "admin@admin.com" && contrasena.value === "admin") {
+    if(email === "admin@admin.com" && contrasena === "admin") {
         window.location.href="../productos/index.html";
     } else {
-        alert("Email o contraseña no válidos para administrar la página");
+        
     }
 
 });

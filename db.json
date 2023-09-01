@@ -25,6 +25,20 @@
       "id": "cdbd2176-5eed-4e5e-871b-8b9c02d74cb0"
     }
   ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Productos Zero Waste"
+    },
+    {
+      "id": 2,
+      "name": "Aceites Vírgenes"
+    },
+    {
+      "id": 3,
+      "name": "Cuidado Personal"
+    }
+  ],
   "productos": [
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/137-1024x1024.jpg",
@@ -37,18 +51,18 @@
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/19.-PNG.png",
       "name": "Cepillo corporal M",
-      "price": "$165",
+      "price": "$170",
       "categoria": "Productos Zero Waste",
       "description": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad.",
       "id": "9eaa1a1e-8628-4cbf-a3a3-6d2d0b3e1c9e",
-      "descripcion": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad!!!!"
+      "descripcion": "Cepillos para cepillado corporal en seco, hechos de materiales 100% naturales, que benefician a la piel y además son biodegradables. Estos cepillos son de madera y fibras de lechuguilla e ixtle y vienen desde Ixmiquilpan, Hidalgo. Hay tres tamaños, para más comodidad."
     },
     {
       "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/68-2-1024x1024.jpg",
       "name": "Jabonera",
-      "price": "$70",
+      "price": "$80",
       "categoria": "Productos Zero Waste",
-      "description": "100% naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
+      "description": "Naturales y biodegradables, se usan para tallarse durante el baño y ayudan a exfoliar de una manera suave, mejorando también la circulación sanguínea.",
       "id": "cfc5e01d-20fb-4a41-8dd2-0040dcf8826b"
     },
     {
@@ -171,6 +185,20 @@
       "categoria": "Cuidado Personal",
       "description": "Perfecto para masajes y terapias relajantes, y para hidratar la piel del cuerpo después del baño. Efecto relajante y antidepresivo.",
       "id": "41c776dd-ed2d-4ecd-95d8-4d33ef0c13ac"
+    },
+    {
+      "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/Tonico-facial-A-3.jpg",
+      "name": "Tónico astringente",
+      "price": "120",
+      "description": "Tónico facial astringente",
+      "id": "lU02L5n"
+    },
+    {
+      "imageUrl": "https://www.filigranas.shop/wp-content/uploads/2023/03/83.jpg",
+      "name": "Sanitizante 120 ml",
+      "price": "45",
+      "description": "Sanitizante antibacterial",
+      "id": "zJWUt9l"
     }
   ]
 }

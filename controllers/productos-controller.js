@@ -1,5 +1,5 @@
 import { productosServicios } from "../servicios/productos-servicios.js";
-import { formatPrice } from "../formatPrice.js";
+//import { formatPrice } from "../formatPrice.js";
 
 const nuevoProducto = (imageUrl, name, price, id,) => {
     const card = document.createElement("div");
@@ -8,7 +8,7 @@ const nuevoProducto = (imageUrl, name, price, id,) => {
     <div class="product__list_producto">
     <img src="${imageUrl}" alt="${name}"/>
     <h2>${name}</h2>
-    <p>${formatPrice(price)}</p>
+    <p>${price}</p>
     <a href="../productos/index.html?id=${id}">+ Info</a>
     </div>`
     ;

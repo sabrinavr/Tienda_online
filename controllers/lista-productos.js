@@ -1,5 +1,5 @@
 import { productosServicios } from "../servicios/productos-servicios.js";
-import { formatPrice } from "../formatPrice.js" ;
+//import { formatPrice } from "../formatPrice.js" ;
 
 const getProducts = (name, price ,imageUrl, id) => {
   const card = document.createElement("div");
@@ -21,7 +21,7 @@ const getProducts = (name, price ,imageUrl, id) => {
         
         <img class="product__list_producto_img" src="${imageUrl}" alt="${name}">
         <h2 class="product-name"> ${name} </h1>
-        <p class="precio">${formatPrice(price)}</p>
+        <p class="precio">${price}</p>
     </div>
     `;
   card.innerHTML = contenido;

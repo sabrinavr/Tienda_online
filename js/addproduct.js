@@ -56,7 +56,7 @@ formularioBtn.addEventListener('click', (event) => {
   
       lector.readAsDataURL(archivo);
     } else {
-      imagenPrevia.src = "#";
+      imagenPrevia.src = "../index.html";
       imagenPrevia.style.display = "none";
       
     }

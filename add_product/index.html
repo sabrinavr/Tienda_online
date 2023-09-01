@@ -29,9 +29,11 @@
   <body>
     <header class="header__container">
       <div class="header__items">
-        <a class="header__logo" href="#">
+
+        <a class="header__logo" href="../index.html">
           <img class="header__logo-image" alt="logo" src="../assets/Logo.svg" />
         </a>
+
         <div class="header__search" id="search__container">
           <input
             class="header__search-input"
@@ -49,6 +51,7 @@
           </button>
         </div>
       </div>
+      
       <div class="header__caja__admin__lupa">
         <a class="header__admin" href="../productos/index.html">
           <button class="header__admin-boton">Menú Administrador</button>
@@ -70,21 +73,7 @@
               placeholder="URL de la imagen"
               data-url
               required
-              type="file"
             />
-            <img
-              id="imagen-previa"
-              src="#"
-              alt="Vista previa de la imagen"
-              style="display: none"
-            />
-
-           <!-- <select class="form-selection" data-categoria multiple required>
-              <option disabled selected value="">Selecciona categoría</option>
-              <option value="Productos Zero Waste">Productos Zero Waste</option>
-              <option value="Aceites vírgenes">Aceites vírgenes</option>
-              <option value="CuidadoPersonal">Cuidado Personal</option>
-            </select> -->
 
             <label class="formulario__addproduct__nombre">
               <input
@@ -95,7 +84,7 @@
                 data-nombre
                 required
                 type="text"
-                pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+                pattern="^[A-Za-z0-9ÑñÁáÉéÍíÓóÚúÜü\s]+$"
                 maxlength="30"
               />
             </label>
@@ -121,7 +110,7 @@
                 data-descripcion
                 required
                 type="text"
-                maxlength="150"
+                maxlength="255"
               ></textarea>
             </label>
 
@@ -142,7 +131,7 @@
 
       <section class="formulario">
         <div class="formulario__container">
-          <a href="../inicio.html">
+          <a href="../index.html">
             <img class="formulario__logo" src="../assets/Logo.svg" alt="logo" />
           </a>
 
@@ -254,9 +243,7 @@
 
     <script
       type="module"
-      src="../controllers/crear-productos-controller.js"
-    ></script>
-    <script src="../js/addproduct.js"></script>
+      src="../controllers/crear-productos-controller.js"></script>
     <script type="module" src="../servicios/productos-servicios.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"

@@ -1,4 +1,4 @@
-const listalogin = () =>{
+const listaLogin = () =>{
     fetch("http://localhost:3000/users")
     .then((respuesta) => respuesta.json());
 }
@@ -14,6 +14,6 @@ const crearLogin = (email, contrasena) => {
 }
 
 export const loginServicios = {
-    listalogin,
+    listaLogin,
     crearLogin
 };

@@ -12,31 +12,32 @@ const listarUnProducto = (id) => {
 };
 
 //POST
-const crearProducto = (imageUrl, name, price) => {
-    return fetch(`http://localhost:3000/productos`, {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-        },
-        body: JSON.stringify({imageUrl, name, price,
-        }),
-    
-    }).then((respuesta) => {
+const crearProducto = (imageUrl, name, price, description) => {
+  return fetch(`http://localhost:3000/productos`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      imageUrl, name, price, description
+    }),
+  }).then((respuesta) => {
     if (respuesta.ok) {
-        return respuesta.body;
+      return respuesta.body;
     }
     throw new Error("No fue posible crear un producto");
-});
+  });
 };
 
 // PUT/PATCH
-const alteraProducto = async (id, name, price, descripcion) => {
+const alteraProducto = async (id, name, price, description) => {
     return fetch(`http://localhost:3000/productos/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({id, name, price, descripcion
+      body: JSON.stringify({
+        id, name, price, description
       }),
     })
       .then((respuesta) => {
