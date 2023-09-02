@@ -1,5 +1,4 @@
 import { productosServicios } from "../servicios/productos-servicios.js";
-//import { formatPrice } from "../formatPrice.js" ;
 
 const getProducts = (name, price ,imageUrl, id) => {
   const card = document.createElement("div");

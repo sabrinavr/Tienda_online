@@ -48,11 +48,7 @@ section.productos{
     border-radius: .5em;
 }
 
-.product__list h2{
-    font-size: 14px;
-    font-weight: 500;
-    padding-bottom: 8px;
-}
+
 
 .product__list p{
     font-size: 16px;
